@@ -1,11 +1,12 @@
 name: Tests
 
 on:
-  push:
+  pull_request:
 
 jobs:
-  test-self-hosted-xlarge-container:
-    runs-on: [self-hosted, xlarge]
+  test:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: curl https://www.google.com.au
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        
