@@ -5,8 +5,8 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, large]
     steps:
       - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+        uses: uses: canonical/action-tmate@main
         
