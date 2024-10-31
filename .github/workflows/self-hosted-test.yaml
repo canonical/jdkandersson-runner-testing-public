@@ -8,5 +8,5 @@ jobs:
     runs-on: [self-hosted, large]
     steps:
       - name: Setup tmate session
-        uses: uses: canonical/action-tmate@main
+        uses: canonical/action-tmate@main
         
