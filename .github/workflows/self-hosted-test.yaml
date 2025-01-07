@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-    runs-on: [self-hosted, self-hosted-linux-amd64-jammy-private-endpoint-medium]
+    runs-on: ubuntu-latest
     steps:
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
