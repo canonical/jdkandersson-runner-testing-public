@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-    runs-on: [self-hosted, large]
+    runs-on: [self-hosted, edge, amd64]
     steps:
       - name: Setup tmate session
         uses: canonical/action-tmate@main
